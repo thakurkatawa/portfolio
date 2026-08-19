@@ -1,18 +1,13 @@
 "use client";
 import React from "react";
-import dynamic from "next/dynamic";
 import { Timeline } from "./ui/timeline";
+import { SparklesCore } from "./ui/sparkles";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-
-const SparklesCore = dynamic(
-  () => import("./ui/sparkles").then((module) => module.SparklesCore),
-  { ssr: false }
-);
 
 const Education: React.FC = () => {
   const timelineData = [
     {
-      title: "2023 - 2027",
+      title: "2022 - 2026",
       content: (
         <div>
           <h4 className="text-xl font-semibold">B.E. - Computer Science & Engineering</h4>
@@ -21,11 +16,11 @@ const Education: React.FC = () => {
       ),
     },
     {
-      title: "2020 - 2023",
+      title: "2020 - 2021",
       content: (
         <div>
-          <h4 className="text-xl font-semibold">Diploma : CSE</h4>
-          <p className="text-neutral-600 dark:text-neutral-400">Anjuman college of Diploma, Karnataka Gadag - 582101</p>
+          <h4 className="text-xl font-semibold">Science : PCME</h4>
+          <p className="text-neutral-600 dark:text-neutral-400">Rajkiya Pratibha Vikas Vidyalaya, Shalimar Bagh, Delhi - 110088</p>
         </div>
       ),
     },
@@ -61,4 +56,3 @@ const Education: React.FC = () => {
 };
 
 export default Education;
-
