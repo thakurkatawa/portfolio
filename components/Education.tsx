@@ -1,8 +1,13 @@
 "use client";
 import React from "react";
+import dynamic from "next/dynamic";
 import { Timeline } from "./ui/timeline";
-import { SparklesCore } from "./ui/sparkles";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+
+const SparklesCore = dynamic(
+  () => import("./ui/sparkles").then((module) => module.SparklesCore),
+  { ssr: false }
+);
 
 const Education: React.FC = () => {
   const timelineData = [

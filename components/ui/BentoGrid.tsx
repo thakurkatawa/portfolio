@@ -70,7 +70,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "thakurkatawa@gmail.com";
+    const text = "princegupta8497@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -220,8 +220,8 @@ export const BentoGridItem = ({
                 }}
               >
                 <Image
-                  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=thakurkatawa&theme=2077"
-                  alt="GitHub Profile Details for thakurkatawa"
+                  src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=hackstyx&theme=2077"
+                  alt="GitHub Stats for hackstyx"
                   className="max-w-full max-h-full object-contain"
                   width={500}
                   height={300}
