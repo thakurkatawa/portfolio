@@ -7,7 +7,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 const Education: React.FC = () => {
   const timelineData = [
     {
-      title: "2022 - 2026",
+      title: "2024 - 2027",
       content: (
         <div>
           <h4 className="text-xl font-semibold">B.E. - Computer Science & Engineering</h4>
@@ -16,11 +16,11 @@ const Education: React.FC = () => {
       ),
     },
     {
-      title: "2020 - 2021",
+      title: "2021 - 2024",
       content: (
         <div>
-          <h4 className="text-xl font-semibold">Science : PCME</h4>
-          <p className="text-neutral-600 dark:text-neutral-400">Rajkiya Pratibha Vikas Vidyalaya, Shalimar Bagh, Delhi - 110088</p>
+          <h4 className="text-xl font-semibold">Diploma : CSE</h4>
+          <p className="text-neutral-600 dark:text-neutral-400">Anjuman E College Gadag, Karnataka, Gadag - 582101</p>
         </div>
       ),
     },

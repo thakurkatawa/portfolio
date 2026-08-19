@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "lottie-react";
+import { Lottie } from "lottie-react";
 import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
-import MagicButton from "../MagicButton";
+import MagicButton from "@/components/MagicButton"; // if using absolute imports
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -151,7 +151,7 @@ export const BentoGridItem = ({
             <div className="mt-5 relative">
               <div className="absolute -bottom-5 right-0 block">
                 <Lottie
-                  animationData={animationData}
+                  src={animationData}
                   loop={copied}
                   autoplay={copied}
                   style={{
